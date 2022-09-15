@@ -1,5 +1,17 @@
+:root {
+  --color-primary: 0, 255, 55;
+  --color-secondary: 0, 140, 233;
+  --color-tertiary: 15, 15, 15;
+
+  --color-text: 250, 250, 250;
+  --color-textMin: 150, 150, 150;
+}
+
 html,
 body {
+  height: 100vh;
+  background: rgba(var(--color-tertiary));
+  color: rgb(var(--color-text));
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -12,6 +24,7 @@ a {
 }
 
 * {
+  font-family: "Inter", sans-serif;
   box-sizing: border-box;
 }
 
