@@ -9,6 +9,8 @@ export const HeaderStyled = styled.div`
   width: 100vw;
   max-width: 100vw;
   padding: 0 7%;
+  position: fixed;
+  top: 0;
 
   display: flex;
   justify-content: space-between;

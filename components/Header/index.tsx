@@ -4,7 +4,7 @@ import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
 import NavigationTo from "./NavigationTo";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -14,7 +14,11 @@ const Header = () => {
     <HeaderStyled>
       <div className="containerLogo">
         <FaChevronLeft />
-        <h1 className="logo">/ Victor da Cruz</h1>
+        <h1 className="logo">
+          <Link href="/">
+            <a>/ Victor da Cruz</a>
+          </Link>
+        </h1>
         <FaChevronRight />
       </div>
       <NavigationStyled isOpen={isOpen}>
