@@ -3,5 +3,6 @@ import Sobre from "./Sobre";
 import Technologies from "./Technologies";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Apresentation from "./Home";
 
-export { Header, Sobre, Technologies, Projects, Contact };
+export { Apresentation, Header, Sobre, Technologies, Projects, Contact };
