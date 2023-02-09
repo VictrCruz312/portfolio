@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const InitHome = () => {
   return (
-    <InitHomeStyled>
+    <InitHomeStyled id="home">
       <div className="containerInfos">
         <h1 className="apresentation">Olá, eu sou o {"{Victor}"}.</h1>
         <p className="description">Desenvolvedor FullStack</p>

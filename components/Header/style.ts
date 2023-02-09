@@ -7,14 +7,17 @@ interface INavigationStyledProps {
 
 export const HeaderStyled = styled.div`
   width: 100vw;
+  height: 10vh;
   max-width: 100vw;
   padding: 0 7%;
+  position: fixed;
+  z-index: 1000;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background-color: rgba(var(--color-secondary), 0.02);
+  background-color: rgba(var(--color-header), 1);
 
   .containerLogo {
     display: flex;

@@ -3,12 +3,15 @@ import styled from "styled-components";
 export const InitHomeStyled = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 20px;
-  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
 
   @media screen and (min-width: 665px) {
     flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
   }
   .containerInfos {
     display: flex;
@@ -72,24 +75,12 @@ export const InitHomeStyled = styled.div`
 
       .gitHub {
         background: rgb(var(--color-tertiary));
-        border: 2px solid rgb(var(--color-text));
+        border: 2px solid rgb(var(--color-primary));
 
         :hover {
-          border: 2px solid rgba(var(--color-secondary), 1);
+          border: 2px solid rgba(var(--color-text), 1);
         }
       }
     }
-  }
-
-  .img {
-    border: 4px solid black !important;
-    border-image-source: linear-gradient(
-      to left,
-      rgba(var(--color-secondary), 1),
-      #f00,
-      green,
-      rgba(var(--color-secondary), 1)
-    ) !important;
-    border-image-slice: 1 !important;
   }
 `;

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header, InitHome } from "../components";
+import { Header, InitHome, Sobre } from "../components";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
       <Header />
       <div className="containerPage">
         <InitHome />
+        <Sobre />
       </div>
     </div>
   );
