@@ -55,6 +55,10 @@ export const NavigationStyled = styled.nav<INavigationStyledProps>`
     @media screen and (min-width: 1024px) {
       display: none;
     }
+
+    button {
+      cursor: pointer;
+    }
   }
 
   @media screen and (min-width: 1024px) {

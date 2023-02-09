@@ -61,7 +61,7 @@ const NavigationTo = ({
         </NavigationToStyled>
 
         <NavigationToStyled menu={menu} text="Tecnologias">
-          <Link to="home" smooth>
+          <Link to="technologies" smooth>
             <button onClick={() => setMenu("Tecnologias")}>Tecnologias</button>
           </Link>
         </NavigationToStyled>

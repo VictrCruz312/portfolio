@@ -20,6 +20,12 @@ export const InitHomeStyled = styled.div`
     justify-content: center;
     color: rgb(var(--color-secondary));
     min-width: 294px;
+    width: 100%;
+    align-items: center;
+
+    @media screen and (min-width: 665px) {
+      align-items: flex-start;
+    }
 
     background: -webkit-linear-gradient(
       180deg,
@@ -48,8 +54,12 @@ export const InitHomeStyled = styled.div`
       margin-top: 34px;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 20px;
+
+      @media screen and (min-width: 665px) {
+        justify-content: flex-start;
+      }
 
       .redirectContact {
         -webkit-text-fill-color: rgb(var(--color-text));
