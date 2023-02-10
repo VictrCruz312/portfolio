@@ -22,7 +22,7 @@ const InitHome = () => {
         </div>
       </div>
       <Image
-        className="img"
+        className="borderColored"
         src="/perfil.png"
         alt="Foto de Victor"
         width="400"

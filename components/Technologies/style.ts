@@ -2,21 +2,44 @@ import styled from "styled-components";
 
 export const TechnologiesStyled = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  gap: 25px;
   align-items: center;
   width: 100%;
   height: 100vh;
-  gap: 50px;
 
-  @media screen and (min-width: 665px) {
-    height: 90vh;
-    flex-direction: row;
-    justify-content: space-between;
+  .technologiesTitle {
+    color: rgb(var(--color-secondary));
   }
 
-  .technologiesListSkills {
+  .technologiesContainer {
     display: flex;
-    gap: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    .technologiesSkillsContainer {
+      background-image: url("/background-shell.png");
+      background-size: cover;
+
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 320px;
+      width: 320px;
+
+      .technologiesSkillTitle {
+        margin: 5px 0 10px 0;
+      }
+    }
   }
+`;
+
+export const ContainerListSkills = styled.ul`
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 `;

@@ -45,7 +45,7 @@ a {
   }
 }
 
-.img {
+.borderColored {
   border: 4px solid black !important;
   border-image-source: linear-gradient(
     to left,

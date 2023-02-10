@@ -7,7 +7,7 @@ const About = () => {
     <AboutStyled id="sobre">
       <div className="sobreContainerImg">
         <Image
-          className="img"
+          className="borderColored"
           src="/sobre-mim.png"
           alt="Foto de Victor"
           width="400px"
