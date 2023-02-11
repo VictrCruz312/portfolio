@@ -31,3 +31,11 @@ npm start
 ```
 
 ### para rodar no ambiente de produção
+
+## Tasks
+
+- Botão de voltar ao topo com efeito de rolagem
+- animação de queda das imagens
+- Estilo para divisão de cada menu utilizando box-shadow ou alguma lib
+- box-shadow em baixo do header
+- imagem de background fixa.

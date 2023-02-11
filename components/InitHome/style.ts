@@ -16,10 +16,17 @@ export const InitHomeStyled = styled.div`
   .containerInfos {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
     color: rgb(var(--color-secondary));
     min-width: 294px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 665px) {
+      align-items: flex-start;
+      text-align: start;
+    }
 
     background: -webkit-linear-gradient(
       180deg,
@@ -48,8 +55,12 @@ export const InitHomeStyled = styled.div`
       margin-top: 34px;
       width: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 20px;
+
+      @media screen and (min-width: 665px) {
+        justify-content: flex-start;
+      }
 
       .redirectContact {
         -webkit-text-fill-color: rgb(var(--color-text));
