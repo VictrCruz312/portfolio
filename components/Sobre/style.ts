@@ -10,7 +10,7 @@ export const AboutStyled = styled.div`
   gap: 50px;
 
   @media screen and (min-width: 665px) {
-    height: 90vh;
+    height: 100vh;
     flex-direction: row;
     justify-content: space-between;
   }
