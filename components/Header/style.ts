@@ -9,7 +9,7 @@ export const HeaderStyled = styled.div`
   width: 100vw;
   height: 10vh;
   max-width: 100vw;
-  padding: 0 7%;
+  padding: 0 3.5%;
   position: fixed;
   z-index: 1000;
 
@@ -19,16 +19,24 @@ export const HeaderStyled = styled.div`
 
   background-color: rgba(var(--color-header), 1);
 
+  @media screen and (min-width: 665px) {
+    padding: 0 7%;
+  }
+
   .containerLogo {
     display: flex;
     align-items: center;
     color: rgb(var(--color-secondary));
-    min-width: 294px;
+    min-width: 256px;
+
+    @media screen and (min-width: 665px) {
+      min-width: 294px;
+    }
 
     .logo {
       color: rgb(var(--color-text));
       font-weight: 700;
-      font-size: 31px;
+      font-size: 26px;
 
       background: -webkit-linear-gradient(
         180deg,
@@ -38,6 +46,10 @@ export const HeaderStyled = styled.div`
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media screen and (min-width: 665px) {
+        font-size: 31px;
+      }
     }
 
     svg {

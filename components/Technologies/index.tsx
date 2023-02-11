@@ -18,11 +18,10 @@ const Technologies = () => {
                 <p className="technologiesSkillName">JavaScript</p>
                 <Image
                   className="technologiesSkillImage"
-                  src="/teste"
-                  alt="Foto de Victor"
-                  width="400px"
-                  height="400px"
-                  layout="responsive"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
                   objectFit="cover"
                 />
                 <span className="technologiesSkillLevel"></span>
@@ -32,11 +31,10 @@ const Technologies = () => {
                 <p className="technologiesSkillName">TypeScript</p>
                 <Image
                   className="technologiesSkillImage"
-                  src="/teste"
-                  alt="Foto de Victor"
-                  width="400px"
-                  height="400px"
-                  layout="responsive"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
                   objectFit="cover"
                 />
                 <span className="technologiesSkillLevel"></span>
@@ -45,11 +43,10 @@ const Technologies = () => {
                 <p className="technologiesSkillName">React</p>
                 <Image
                   className="technologiesSkillImage"
-                  src="/teste"
-                  alt="Foto de Victor"
-                  width="400px"
-                  height="400px"
-                  layout="responsive"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
                   objectFit="cover"
                 />
                 <span className="technologiesSkillLevel"></span>
@@ -65,24 +62,23 @@ const Technologies = () => {
                 <p className="technologiesSkillName">JavaScript</p>
                 <Image
                   className="technologiesSkillImage"
-                  src="/teste"
-                  alt="Foto de Victor"
-                  width="400px"
-                  height="400px"
-                  layout="responsive"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
                   objectFit="cover"
                 />
                 <span className="technologiesSkillLevel"></span>
               </li>
+
               <li className="technologiesSkill">
                 <p className="technologiesSkillName">TypeScript</p>
                 <Image
                   className="technologiesSkillImage"
-                  src="/teste"
-                  alt="Foto de Victor"
-                  width="400px"
-                  height="400px"
-                  layout="responsive"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
                   objectFit="cover"
                 />
                 <span className="technologiesSkillLevel"></span>
@@ -91,11 +87,144 @@ const Technologies = () => {
                 <p className="technologiesSkillName">React</p>
                 <Image
                   className="technologiesSkillImage"
-                  src="/teste"
-                  alt="Foto de Victor"
-                  width="400px"
-                  height="400px"
-                  layout="responsive"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">JavaScript</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">TypeScript</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">JavaScript</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">TypeScript</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
+                  objectFit="cover"
+                />
+                <span className="technologiesSkillLevel"></span>
+              </li>
+              <li className="technologiesSkill">
+                <p className="technologiesSkillName">React</p>
+                <Image
+                  className="technologiesSkillImage"
+                  src="/icon-technologies/js.png"
+                  alt="javascript"
+                  width="30px"
+                  height="30px"
                   objectFit="cover"
                 />
                 <span className="technologiesSkillLevel"></span>

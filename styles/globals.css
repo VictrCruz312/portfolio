@@ -22,7 +22,11 @@ body {
 .containerPage {
   width: 100vw;
   max-width: 100vw;
-  padding: 0 7%;
+  padding: 0 3.5%;
+
+  @media and (min-width: 665px) {
+    padding: 0 7%;
+  }
 }
 
 a {
