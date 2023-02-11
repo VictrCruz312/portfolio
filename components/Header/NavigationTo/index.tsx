@@ -16,17 +16,6 @@ const NavigationTo = ({
   menu,
   isOpen,
 }: INavigationProps) => {
-  const smoothScroll = (id: string) => {
-    const element = document.getElementById(id);
-    console.log(element);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  };
-
   let Link = Scroll.Link;
 
   return (
