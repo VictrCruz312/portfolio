@@ -1,6 +1,9 @@
 import Image from "next/image";
-import { ContainerListSkills, TechnologiesStyled } from "./style";
-import { Scrollbars } from "react-custom-scrollbars";
+import {
+  ContainerListSkills,
+  ScrollableContainer,
+  TechnologiesStyled,
+} from "./style";
 
 const Technologies = () => {
   return (
@@ -9,22 +12,7 @@ const Technologies = () => {
       <div className="technologiesContainer">
         <div className="technologiesSkillsContainer borderColored">
           <h3 className="technologiesSkillTitle">hard skills</h3>
-          <Scrollbars
-            style={{ height: 300 }}
-            thumbMinSize={30}
-            autoHide={false}
-            renderThumbVertical={({ style, ...props }) => (
-              <div
-                {...props}
-                style={{
-                  ...style,
-                  backgroundColor: "rgb(var(--color-primary))",
-                  borderRadius: 10,
-                  width: "6px",
-                }}
-              />
-            )}
-          >
+          <ScrollableContainer>
             <ContainerListSkills className="technologiesListSkills">
               <li className="technologiesSkill">
                 <p className="technologiesSkillName">JavaScript</p>
@@ -67,26 +55,11 @@ const Technologies = () => {
                 <span className="technologiesSkillLevel"></span>
               </li>
             </ContainerListSkills>
-          </Scrollbars>
+          </ScrollableContainer>
         </div>
         <div className="technologiesSkillsContainer borderColored">
           <h3 className="technologiesSkillTitle">soft skills</h3>
-          <Scrollbars
-            style={{ height: 300 }}
-            thumbMinSize={30}
-            autoHide={false}
-            renderThumbVertical={({ style, ...props }) => (
-              <div
-                {...props}
-                style={{
-                  ...style,
-                  backgroundColor: "rgb(var(--color-primary))",
-                  borderRadius: 10,
-                  width: "6px",
-                }}
-              />
-            )}
-          >
+          <ScrollableContainer>
             <ContainerListSkills className="technologiesListSkills">
               <li className="technologiesSkill">
                 <p className="technologiesSkillName">JavaScript</p>
@@ -128,7 +101,7 @@ const Technologies = () => {
                 <span className="technologiesSkillLevel"></span>
               </li>
             </ContainerListSkills>
-          </Scrollbars>
+          </ScrollableContainer>
         </div>
       </div>
     </TechnologiesStyled>

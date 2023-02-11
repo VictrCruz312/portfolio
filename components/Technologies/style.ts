@@ -42,4 +42,23 @@ export const ContainerListSkills = styled.ul`
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+
+  .technologiesSkill {
+    .technologiesSkillName {
+    }
+  }
+`;
+
+export const ScrollableContainer = styled.div`
+  overflow-y: auto;
+  max-height: 400px;
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(var(--color-tertiary));
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgb(var(--color-primary));
+  }
 `;
