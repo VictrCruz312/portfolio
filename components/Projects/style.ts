@@ -1,19 +1,28 @@
+import { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 
 export const ProjectsStyled = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 25px;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  padding: 30% 0 25% 0;
 
   .projectsTitle {
     color: rgb(var(--color-secondary));
   }
 
   .projectsList {
-    display: flex;
+    display: block;
+    padding: 0;
+    width: 95%;
+    margin: auto;
+
+    list-style: none;
+
+    .slick-slide {
+      padding: 0 10px;
+    }
+    .projectsListProject {
+    }
   }
 `;
