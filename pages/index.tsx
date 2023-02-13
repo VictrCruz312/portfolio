@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header, InitHome, Sobre, Technologies } from "../components";
+import { Header, InitHome, Projects, Sobre, Technologies } from "../components";
 
 export default function Home() {
   return (
@@ -14,6 +14,7 @@ export default function Home() {
         <InitHome />
         <Sobre />
         <Technologies />
+        <Projects />
       </div>
     </div>
   );
