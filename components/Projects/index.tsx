@@ -9,22 +9,10 @@ import { ProjectsStyled } from "./style";
 import { useEffect, useState } from "react";
 
 const Projects = () => {
-  const [slidesShow, setSlidesShow] = useState(3);
-
-  useEffect(() => {
-    if (window.innerWidth <= 450) {
-      setSlidesShow(1);
-    } else if (window.innerWidth <= 770 && window.innerWidth > 450) {
-      setSlidesShow(2);
-    } else if (window.innerWidth > 770) {
-      setSlidesShow(3);
-    }
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: slidesShow,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -37,66 +25,113 @@ const Projects = () => {
         <ul className="projectsList">
           <Slider {...settings}>
             <li className="projectsListProject ">
-              <Link href="http://github.com/VictrCruz312">
+              <Link href="https://calculadora-antecipacao-de-valores.vercel.app/">
                 <a target="_blank">
                   <Image
-                    src="/perfil.png"
+                    src="/projects/antecipação-de-valores.PNG"
+                    className="projectsImg"
                     height="300"
-                    width="300"
-                    alt="teste"
-                    objectFit="cover"
+                    width="320"
+                    alt="Antecipação de valores"
+                    objectFit="contain"
                   />
                 </a>
               </Link>
             </li>
             <li className="projectsProject ">
-              <Link href="http://github.com/VictrCruz312">
+              <Link href="https://victrcruz312.github.io/BLOG/">
                 <a target="_blank">
                   <Image
-                    src="/perfil.png"
+                    src="/projects/Blog.PNG"
+                    className="projectsImg"
                     height="300"
-                    width="300"
-                    alt="teste"
-                    objectFit="cover"
+                    width="320"
+                    alt="Blog Kenzie"
+                    objectFit="contain"
                   />
                 </a>
               </Link>
             </li>
             <li className="projectsProject ">
-              <Link href="http://github.com/VictrCruz312">
+              <Link href="https://github.com/VictrCruz312/CNAB-Parser">
                 <a target="_blank">
                   <Image
-                    src="/perfil.png"
+                    src="/projects/CNAB-Parser.PNG"
+                    className="projectsImg"
                     height="300"
-                    width="300"
-                    alt="teste"
-                    objectFit="cover"
+                    width="320"
+                    alt="CNAB Parser"
+                    objectFit="contain"
                   />
                 </a>
               </Link>
             </li>
             <li className="projectsProject ">
-              <Link href="http://github.com/VictrCruz312">
+              <Link href="https://victrcruz312.github.io/Kenzie-news/">
                 <a target="_blank">
                   <Image
-                    src="/perfil.png"
+                    src="/projects/kenzie-news.PNG"
+                    className="projectsImg"
                     height="300"
-                    width="300"
-                    alt="teste"
-                    objectFit="cover"
+                    width="320"
+                    alt="Kenzie News"
+                    objectFit="contain"
                   />
                 </a>
               </Link>
             </li>
             <li className="projectsProject ">
-              <Link href="http://github.com/VictrCruz312">
+              <Link href="https://kenzie-livre.vercel.app/">
                 <a target="_blank">
                   <Image
-                    src="/perfil.png"
+                    src="/projects/KenzieLivre.PNG"
+                    className="projectsImg"
                     height="300"
-                    width="300"
-                    alt="teste"
-                    objectFit="cover"
+                    width="320"
+                    alt="Kenzie Livre"
+                    objectFit="contain"
+                  />
+                </a>
+              </Link>
+            </li>
+            <li className="projectsProject ">
+              <Link href="https://react-entrega-s2-formulario-de-cadastro-victrcruz312.vercel.app/">
+                <a target="_blank">
+                  <Image
+                    src="/projects/Kenzie-Hub.PNG"
+                    className="projectsImg"
+                    height="300"
+                    width="320"
+                    alt="Kenzie Hub"
+                    objectFit="contain"
+                  />
+                </a>
+              </Link>
+            </li>
+            <li className="projectsProject ">
+              <Link href="https://github.com/VictrCruz312/KMDB">
+                <a target="_blank">
+                  <Image
+                    src="/projects/KMDB.PNG"
+                    className="projectsImg"
+                    height="300"
+                    width="320"
+                    alt="KMDB"
+                    objectFit="contain"
+                  />
+                </a>
+              </Link>
+            </li>
+            <li className="projectsProject ">
+              <Link href="https://nu-kenzie-blush-omega.vercel.app/">
+                <a target="_blank">
+                  <Image
+                    src="/projects/nuKenzie.PNG"
+                    className="projectsImg"
+                    height="300"
+                    width="320"
+                    alt="Nu Kenzie"
+                    objectFit="contain"
                   />
                 </a>
               </Link>

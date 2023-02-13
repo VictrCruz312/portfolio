@@ -22,7 +22,13 @@ export const ProjectsStyled = styled.div`
     .slick-slide {
       padding: 0 10px;
     }
-    .projectsListProject {
-    }
+    /* .projectsListProject {
+      .projectsProject {
+        .projectsImg {
+          width: 70vw;
+          max-height: 300px !important;
+        }
+      }
+    } */
   }
 `;
