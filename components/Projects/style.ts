@@ -5,7 +5,7 @@ export const ProjectsStyled = styled.div`
   width: 95%;
   text-align: center;
   margin: auto;
-  padding: 30% 0 25% 0;
+  padding: 15% 0 0 0;
 
   .projectsTitle {
     color: rgb(var(--color-secondary));
@@ -22,13 +22,5 @@ export const ProjectsStyled = styled.div`
     .slick-slide {
       padding: 0 10px;
     }
-    /* .projectsListProject {
-      .projectsProject {
-        .projectsImg {
-          width: 70vw;
-          max-height: 300px !important;
-        }
-      }
-    } */
   }
 `;
