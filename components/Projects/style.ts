@@ -2,10 +2,12 @@ import { Dispatch, SetStateAction } from "react";
 import styled from "styled-components";
 
 export const ProjectsStyled = styled.div`
-  width: 95%;
-  text-align: center;
-  margin: auto;
-  padding: 15% 0 0 0;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   .projectsTitle {
     color: rgb(var(--color-secondary));
