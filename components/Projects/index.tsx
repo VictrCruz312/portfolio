@@ -1,16 +1,13 @@
-import Image from "next/image";
-import Link from "next/link";
-import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { ProjectsStyled } from "./style";
 import { useEffect, useState } from "react";
 import CarouselProjects from "./CarrouselProjects";
+import CardProject, { IProject } from "./CardProject";
 
 const Projects = () => {
-  const listProjects = [
+  const listProjects: IProject[] = [
     {
       id: 1,
       link: "https://calculadora-antecipacao-de-valores.vercel.app/",
@@ -61,12 +58,18 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="projetos" style={{ height: "100vh" }}>
-      <ProjectsStyled>
-        <h2 className="projectsTitle">Projetos</h2>
-        <CarouselProjects listProjects={listProjects} />
-      </ProjectsStyled>
-    </div>
+    <ProjectsStyled>
+      <h2 className="projectsTitle">Projetos</h2>
+      <CarouselProjects
+        autoScroll={true}
+        autoScrollTime="fast"
+        autoScrollWidth={312}
+      >
+        {listProjects?.map((project: IProject) => (
+          <CardProject project={project} key={project.id} />
+        ))}
+      </CarouselProjects>
+    </ProjectsStyled>
   );
 };
 
