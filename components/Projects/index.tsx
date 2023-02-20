@@ -1,145 +1,75 @@
-import Image from "next/image";
-import Link from "next/link";
-import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { ProjectsStyled } from "./style";
 import { useEffect, useState } from "react";
+import CarouselProjects from "./CarrouselProjects";
+import CardProject, { IProject } from "./CardProject";
 
 const Projects = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
+  const listProjects: IProject[] = [
+    {
+      id: 1,
+      link: "https://calculadora-antecipacao-de-valores.vercel.app/",
+      image: "/projects/antecipação-de-valores.PNG",
+      alt: "Antecipação de valores",
+    },
+    {
+      id: 2,
+      link: "https://victrcruz312.github.io/BLOG/",
+      image: "/projects/Blog.PNG",
+      alt: "Blog Kenzie",
+    },
+    {
+      id: 3,
+      link: "https://github.com/VictrCruz312/CNAB-Parser",
+      image: "/projects/CNAB-Parser.PNG",
+      alt: "CNAB Parser",
+    },
+    {
+      id: 4,
+      link: "https://victrcruz312.github.io/Kenzie-news/",
+      image: "/projects/kenzie-news.PNG",
+      alt: "Kenzie News",
+    },
+    {
+      id: 5,
+      link: "https://kenzie-livre.vercel.app/",
+      image: "/projects/KenzieLivre.PNG",
+      alt: "Kenzie Livre",
+    },
+    {
+      id: 6,
+      link: "https://react-entrega-s2-formulario-de-cadastro-victrcruz312.vercel.app/",
+      image: "/projects/Kenzie-Hub.PNG",
+      alt: "Kenzie Hub",
+    },
+    {
+      id: 7,
+      link: "https://github.com/VictrCruz312/KMDB",
+      image: "/projects/KMDB.PNG",
+      alt: "KMDB",
+    },
+    {
+      id: 8,
+      link: "https://nu-kenzie-blush-omega.vercel.app/",
+      image: "/projects/nuKenzie.PNG",
+      alt: "Nu Kenzie",
+    },
+  ];
   return (
-    <div id="projetos" style={{ height: "100vh" }}>
-      <ProjectsStyled>
-        <h2 className="projectsTitle">Projetos</h2>
-        <ul className="projectsList">
-          <Slider {...settings}>
-            <li className="projectsListProject ">
-              <Link href="https://calculadora-antecipacao-de-valores.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/antecipação-de-valores.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Antecipação de valores"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://victrcruz312.github.io/BLOG/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/Blog.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Blog Kenzie"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://github.com/VictrCruz312/CNAB-Parser">
-                <a target="_blank">
-                  <Image
-                    src="/projects/CNAB-Parser.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="CNAB Parser"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://victrcruz312.github.io/Kenzie-news/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/kenzie-news.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Kenzie News"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://kenzie-livre.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/KenzieLivre.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Kenzie Livre"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://react-entrega-s2-formulario-de-cadastro-victrcruz312.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/Kenzie-Hub.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Kenzie Hub"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://github.com/VictrCruz312/KMDB">
-                <a target="_blank">
-                  <Image
-                    src="/projects/KMDB.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="KMDB"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://nu-kenzie-blush-omega.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/nuKenzie.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Nu Kenzie"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-          </Slider>
-        </ul>
-      </ProjectsStyled>
-    </div>
+    <ProjectsStyled>
+      <h2 className="projectsTitle">Projetos</h2>
+      <CarouselProjects
+        autoScroll={true}
+        autoScrollTime="fast"
+        autoScrollWidth={312}
+      >
+        {listProjects?.map((project: IProject) => (
+          <CardProject project={project} key={project.id} />
+        ))}
+      </CarouselProjects>
+    </ProjectsStyled>
   );
 };
 
