@@ -5,8 +5,10 @@ import { CardProjectStyled } from "./style";
 export interface IProject {
   id: number;
   image: string;
-  link: string;
+  deploy: string | null;
+  repositorio: string;
   alt: string;
+  description: string;
 }
 
 interface IPropsCardProject {
@@ -14,24 +16,38 @@ interface IPropsCardProject {
 }
 
 const CardProject = ({ project }: IPropsCardProject) => {
-  const { link, image, id, alt } = project;
+  const { deploy, repositorio, description, image, id, alt } = project;
   return (
-    <CardProjectStyled>
-      <Link href={link}>
-        <a target="_blank">
-          <figure className="projectContainerImage">
-            <Image
-              src={image}
-              className="projectImage"
-              height="300"
-              width="320"
-              alt={alt}
-              objectFit="contain"
-            />
-          </figure>
-        </a>
-      </Link>
-    </CardProjectStyled>
+    <div className="borderColored">
+      <CardProjectStyled>
+        <figure className="projectContainerImage">
+          <Image
+            src={image}
+            className="projectImage"
+            height="200"
+            width="312px"
+            alt={alt}
+            layout="responsive"
+            objectFit="revert-layer"
+          />
+        </figure>
+        <div className="redirects">
+          <Link href={repositorio}>
+            <a className="repositorio" target="_blank">
+              Repositório
+            </a>
+          </Link>
+          <Link href={deploy ? deploy : ""}>
+            <a className={deploy ? "deploy" : "deployBloqued"} target="_blank">
+              Deploy
+            </a>
+          </Link>
+        </div>
+        <div className="containerDescription">
+          <p className="description">{description}</p>
+        </div>
+      </CardProjectStyled>
+    </div>
   );
 };
 

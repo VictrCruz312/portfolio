@@ -65,7 +65,7 @@ export const AboutStyled = styled.div`
       border-radius: 4px;
       padding: 3px 10px;
 
-      font-size: 15px;
+      font-size: 23px;
       font-weight: 700;
       color: rgb(var(--color-text));
     }
@@ -76,7 +76,7 @@ export const AboutStyled = styled.div`
 
       :hover {
         border: 2px solid rgb(var(--color-secondary));
-        background: rgb(var(--color-tertiary));
+        background: rgb(var(--color-button-hover));
       }
     }
 
@@ -86,7 +86,7 @@ export const AboutStyled = styled.div`
 
       :hover {
         -webkit-text-fill-color: rgb(var(--color-text));
-        background: rgb(var(--color-tertiary));
+        background: rgb(var(--color-button-hover));
         border: 2px solid rgba(var(--color-text), 1);
       }
     }

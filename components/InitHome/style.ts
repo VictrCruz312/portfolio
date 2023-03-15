@@ -69,7 +69,7 @@ export const InitHomeStyled = styled.div`
         border-radius: 4px;
         padding: 3px 10px;
 
-        font-size: 15px;
+        font-size: 23px;
         font-weight: 700;
         color: rgb(var(--color-text));
       }
@@ -80,7 +80,7 @@ export const InitHomeStyled = styled.div`
 
         :hover {
           border: 2px solid rgb(var(--color-secondary));
-          background: rgb(var(--color-tertiary));
+          background: rgb(var(--color-button-hover));
         }
       }
 
@@ -90,8 +90,24 @@ export const InitHomeStyled = styled.div`
 
         :hover {
           border: 2px solid rgba(var(--color-text), 1);
+          background: rgb(var(--color-button-hover));
         }
       }
+    }
+  }
+
+  .perfilImg {
+    min-width: 87vw;
+    height: 87vw;
+
+    @media screen and (min-width: 466px) {
+      min-width: 300px;
+      height: 300px;
+    }
+
+    @media screen and (min-width: 766px) {
+      min-width: 400px;
+      height: 400px;
     }
   }
 `;
