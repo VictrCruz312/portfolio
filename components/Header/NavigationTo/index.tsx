@@ -56,7 +56,7 @@ const NavigationTo = ({
         </NavigationToStyled>
 
         <NavigationToStyled menu={menu} text="Projetos">
-          <Link to="projetos" smooth>
+          <Link to="projects" smooth>
             <button onClick={() => setMenu("Projetos")}>Projetos</button>
           </Link>
         </NavigationToStyled>

@@ -1,145 +1,111 @@
-import Image from "next/image";
-import Link from "next/link";
-import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import { ProjectsStyled } from "./style";
-import { useEffect, useState } from "react";
+import CarouselProjects from "./CarrouselProjects";
+import CardProject, { IProject } from "./CardProject";
 
 const Projects = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
+  const listProjects: IProject[] = [
+    {
+      id: 1,
+      deploy: "https://calculadora-antecipacao-de-valores.vercel.app/",
+      repositorio:
+        "https://github.com/VictrCruz312/calculadora-antecipacao_de_valores",
+      image: "/projects/antecipação-de-valores.PNG",
+      alt: "Antecipação de valores",
+      description: `calcule e saiba quanto vai receber do total de uma venda
+       se optar por antecipação de recebimento do dinheiro.`,
+    },
+    {
+      id: 2,
+      deploy: "https://victrcruz312.github.io/BLOG/",
+      repositorio: "https://github.com/VictrCruz312/BLOG",
+      image: "/projects/Blog.PNG",
+      alt: "Blog Kenzie",
+      description: `A ideia desse projeto é simular uma comunidade, onde
+       todos os membros cadastrados podem consumir, criar, atualizar e
+        deletar publicações de texto. Também por em pratica o fluxo de
+         autenticação em APIs.`,
+    },
+    {
+      id: 3,
+      deploy: null,
+      repositorio: "https://github.com/VictrCruz312/CNAB-Parser",
+      image: "/projects/CNAB-Parser.PNG",
+      alt: "CNAB Parser",
+      description: `CNAB-Parser é uma aplicação web desenvolvida
+      em Python, utilizando o framework Django, que permite fazer
+      upload e processar arquivos CNAB. Ele normaliza e armazena os
+      dados em um banco de dados relacional e exibe operações importadas
+      por loja com totalizador do saldo.`,
+    },
+    {
+      id: 4,
+      deploy: "https://victrcruz312.github.io/Kenzie-news/",
+      repositorio: "https://github.com/VictrCruz312/Kenzie-news",
+      image: "/projects/kenzie-news.PNG",
+      alt: "Kenzie News",
+      description: "Site de noticias com modo noturno.",
+    },
+    {
+      id: 5,
+      deploy: "https://kenzie-livre.vercel.app/",
+      repositorio: "https://github.com/VictrCruz312/kenzielivre",
+      image: "/projects/KenzieLivre.PNG",
+      alt: "Kenzie Livre",
+      description: `O projeto final de módulo na Kenzie Academy
+      Brasil foi um desafio para criar um projeto do zero, incluindo a ideia,
+      design (figma) e resultado final. O time era composto por 4
+      desenvolvedores. A metodologia utilizada foi o Scrum/Kanban, o objetivo
+      do projeto era reunir vendedores e clientes em uma única plataforma,
+      facilitando a venda e compra de produtos em um e-commerce.
+      `,
+    },
+    {
+      id: 6,
+      deploy:
+        "https://react-entrega-s2-formulario-de-cadastro-victrcruz312.vercel.app/",
+      repositorio: "https://github.com/VictrCruz312/KenzieHub",
+      image: "/projects/Kenzie-Hub.PNG",
+      alt: "Kenzie Hub",
+      description: `O projeto é um hub para salvar tecnologias e aprendizados
+      em andamento, bem como o nível de competência. Ele possui telas de
+      registro, login e dashboard, e validações de formulários foram feitas
+      usando bibliotecas como YUP e React Hook Form.
+      `,
+    },
+    {
+      id: 7,
+      deploy: null,
+      repositorio: "https://github.com/VictrCruz312/KMDB",
+      image: "/projects/KMDB.PNG",
+      alt: "KMDB",
+      description: `Api para cadastro de filmes e possibilidade de usuários
+      avaliarem os filmes cadastrados.`,
+    },
+    {
+      id: 8,
+      deploy: "https://nu-kenzie-blush-omega.vercel.app/",
+      repositorio: "https://github.com/VictrCruz312/NuKenzie",
+      image: "/projects/nuKenzie.PNG",
+      alt: "Nu Kenzie",
+      description: "Aplicativo de controle de finanças feito em react",
+    },
+  ];
   return (
-    <div id="projetos" style={{ height: "100vh" }}>
-      <ProjectsStyled>
-        <h2 className="projectsTitle">Projetos</h2>
-        <ul className="projectsList">
-          <Slider {...settings}>
-            <li className="projectsListProject ">
-              <Link href="https://calculadora-antecipacao-de-valores.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/antecipação-de-valores.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Antecipação de valores"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://victrcruz312.github.io/BLOG/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/Blog.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Blog Kenzie"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://github.com/VictrCruz312/CNAB-Parser">
-                <a target="_blank">
-                  <Image
-                    src="/projects/CNAB-Parser.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="CNAB Parser"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://victrcruz312.github.io/Kenzie-news/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/kenzie-news.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Kenzie News"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://kenzie-livre.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/KenzieLivre.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Kenzie Livre"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://react-entrega-s2-formulario-de-cadastro-victrcruz312.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/Kenzie-Hub.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Kenzie Hub"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://github.com/VictrCruz312/KMDB">
-                <a target="_blank">
-                  <Image
-                    src="/projects/KMDB.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="KMDB"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-            <li className="projectsProject ">
-              <Link href="https://nu-kenzie-blush-omega.vercel.app/">
-                <a target="_blank">
-                  <Image
-                    src="/projects/nuKenzie.PNG"
-                    className="projectsImg"
-                    height="300"
-                    width="320"
-                    alt="Nu Kenzie"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            </li>
-          </Slider>
-        </ul>
-      </ProjectsStyled>
-    </div>
+    <ProjectsStyled id="projects">
+      <h2 className="projectsTitle">Projetos</h2>
+      <CarouselProjects
+        autoScroll={true}
+        autoScrollTime="fast"
+        autoScrollWidth={312}
+      >
+        {listProjects?.map((project: IProject) => (
+          <CardProject project={project} key={project.id} />
+        ))}
+      </CarouselProjects>
+    </ProjectsStyled>
   );
 };
 

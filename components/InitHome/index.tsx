@@ -21,14 +21,17 @@ const InitHome = () => {
           </Link>
         </div>
       </div>
-      <Image
-        className="borderColored"
-        src="/perfil.png"
-        alt="Foto de Victor"
-        width="400"
-        height="400"
-        objectFit="cover"
-      />
+      <div className="perfilImg">
+        <Image
+          className="borderColored"
+          src="/perfil.png"
+          alt="Foto de Victor"
+          width="400"
+          height="400"
+          layout="responsive"
+          objectFit="contain"
+        />
+      </div>
     </InitHomeStyled>
   );
 };
