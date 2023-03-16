@@ -32,10 +32,11 @@ npm start
 
 ### para rodar no ambiente de produção
 
-## Tasks
+## Tasks a serem feitas
 
 - Botão de voltar ao topo com efeito de rolagem
-- animação de queda das imagens
-- Estilo para divisão de cada menu utilizando box-shadow ou alguma lib
-- box-shadow em baixo do header
-- imagem de background fixa.
+- animações ao rolar a página
+- Menu de contato com formulário para enviar um email.
+- Criar uma API para cadastrar os projetos e informações do portifolio
+- Consumir os dados da API para carregar os conteúdos do portifólio
+- tela admin com login, CRUD de projetos, CRUD de tecnologias e atualização do perfil/links de contato.
