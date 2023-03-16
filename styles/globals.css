@@ -63,3 +63,7 @@ a {
   ) !important;
   border-image-slice: 1 !important;
 }
+
+.modal-open {
+  overflow: hidden;
+}
