@@ -3,14 +3,16 @@
 ### Faça o clone e instale as dependecias na sua máquina pelo terminal:
 
 ```
-# yarn
+git clone git@github.com:VictrCruz312/portfolio.git
 
-ou
+cd portfolio
 
-# npm install
+yarn
+#caso queira pode utilizar o npm: 
+npm install
 ```
 
-## para rodar o projeto em um servidor na sua máquina (localHost) no terminal você pode digitar:
+## para rodar o projeto em um servidor na sua máquina (localhost) em ambiente de desenvolvimento é só digitar no terminal:
 
 ```html
 yarn run dev
@@ -20,17 +22,18 @@ yarn run dev
 npm run dev
 ```
 
-### para rodar no ambiente de desenvolvimento ou:
+### para rodar no ambiente de de produção:
 
 ```html
 yarn start
-
 <!-- ou  -->
-
 npm start
-```
 
-### para rodar no ambiente de produção
+#pode ser necessario realizar o build da aplicação antes de executar os comandos acima:
+yarn build
+<!-- ou  -->
+npm run build
+```
 
 ## Tasks a serem feitas
 
